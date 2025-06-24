@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      fetch('https://Sakinabanu7.github.io/dummy-api/users.json')
+        .then(res => res.json())
+        .then(data => {
+          console.log(data);
+          document.body.innerHTML = JSON.stringify(data);
+        });
+    </script>
+  </body>
+</html>
